@@ -26,9 +26,9 @@ export default function Main(){
             </S.Section>
             <S.SectionBlack>
                 <S.ImgBlack src={Warner} alt="Warner enterprise" />
-                <h2>Sobre nós</h2>
-                <h2>Produtos</h2>
-                <h2>Personagens</h2>
+                <S.BlackH2>Sobre nós</S.BlackH2>
+                <S.BlackH2>Produtos</S.BlackH2>
+                <S.BlackH2>Personagens</S.BlackH2>
                 <S.ImgBlack src={Github} alt="logo do github" />
                 <S.ImgBlack src={Linkedin} alt="logo do linkedin" />
             </S.SectionBlack>

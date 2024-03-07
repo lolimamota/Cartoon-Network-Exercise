@@ -17,7 +17,6 @@ background-color: #211921;
 `;
 
 export const Section = styled.section`
-border: solid red;
 height: 40vh;
 display:flex;
 align-items: center;
@@ -25,5 +24,6 @@ justify-content: space-around;
 `;
 
 export const BlackH2 = styled.h2`
-
+background-color: #211921;
+color: white;
 `;
