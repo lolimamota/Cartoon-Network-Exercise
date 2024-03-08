@@ -8,10 +8,7 @@ align-items: center;
 font-family: "Madimi One", sans-serif;
 font-size: 0.6rem;
 font-weight: 100;
-`;
-
-export const StyleSecImg = styled.section`
-margin-left: 5vw;
+padding: 5rem;
 `;
 
 export const Section = styled.section`
@@ -32,3 +29,8 @@ flex-direction: column;
 export const Img = styled.img`
 width: 100px;
 `;
+
+
+// export const Logo = styled.img`
+// width: 20vw;
+// `;

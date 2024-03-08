@@ -1,15 +1,14 @@
 import React from "react";
 import * as S from "./HeaderStyle.jsx";
-import LogoCN from "./Images/logoCN.png"
-import Manete from "./Images/manete.png"
-import Clock from "./Images/relogio.png"
+import LogoCN from "./Images/logoCN.png";
+import Manete from "./Images/manete.png";
+import Clock from "./Images/relogio.png";
+// import LogoAnimated from "./Images/logoanimated.gif";
 
 export default function Header(){
     return(
         <S.HeaderStyle>
-            <S.StyleSecImg>
                 <img src={LogoCN} alt="Logo da Cartoon Network" />
-            </S.StyleSecImg>
             <S.Section>
                 <S.Div>
                     <S.Img src={Manete} alt="Manete de Videogame" />
