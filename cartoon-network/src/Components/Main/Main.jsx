@@ -16,7 +16,7 @@ import Ursos from './Images/ursos.png';
 import Warner from '../Footer/Images/logoWarner.png';
 import Linkedin from '../Footer/Images/logoLinkedin.png';
 import Github from '../Footer/Images/logoGithub.png';
-
+import Programs from '../Horarios/Horario.jsx';
 
 export default function Main(){
     return(
@@ -45,6 +45,9 @@ export default function Main(){
                 <S.ImgBlack src={Github} alt="logo do github" />
                 <S.ImgBlack src={Linkedin} alt="logo do linkedin" />
             </S.SectionBlack>
+            <section>
+                <Programs/>
+            </section>
         </main>
     )
 }
