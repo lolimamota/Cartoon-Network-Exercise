@@ -7,7 +7,7 @@ export const SectionBlack = styled.section`
 height: 35vh;
 display:flex;
 align-items: center;
-justify-content: space-between;
+justify-content: space-around;
 background-color: #211921;
 `;
 

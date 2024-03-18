@@ -16,15 +16,17 @@ import TomJerry from './Images/tomejerry.png';
 import Warner from '../Footer/Images/logoWarner.png';
 import Linkedin from '../Footer/Images/logoLinkedin.png';
 import Github from '../Footer/Images/logoGithub.png';
-import Programs from '../Horarios/Horario.jsx';
+// import Programs from '../Horarios/Horario.jsx';
 
 export default function Main(){
     return(
         <main>
             <S.SectionBlack>
-                <S.DivBlack><S.ImgBlack src={Sd} alt="Scooby-doo e sua turma" /></S.DivBlack>
-                <S.DivBlack><S.ImgBlack src={Ben10} alt="Ben 10" /></S.DivBlack>
-                <S.DivBlack><S.ImgBlack src={Looney} alt="Os Looney Tunes" /></S.DivBlack>
+                <S.DivBlack>
+                    <S.ImgBlack src={Sd} alt="Scooby-doo e sua turma" />
+                    <S.ImgBlack src={Ben10} alt="Ben 10" />
+                    <S.ImgBlack src={Looney} alt="Os Looney Tunes" />
+                </S.DivBlack>
                 {/* <S.DivBlack><S.ImgBlack src={Adventure} alt="Hora de Aventura"/></S.DivBlack>
                 <S.DivBlack><S.ImgBlack src={Regular} alt="Apenas um show"/></S.DivBlack>
                 <S.DivBlack><S.ImgBlack src={Courage} alt="Coragem. o cão covarde"/></S.DivBlack> */}
@@ -45,9 +47,9 @@ export default function Main(){
                 <S.ImgBlack src={Github} alt="logo do github" />
                 <S.ImgBlack src={Linkedin} alt="logo do linkedin" />
             </S.SectionBlack>
-            <section>
+            {/* <section>
                 <Programs/>
-            </section>
+            </section> */}
         </main>
     )
 }
