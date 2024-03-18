@@ -11,7 +11,7 @@ align-items: center;
 
 export const SectionFilter = styled.section`
 display: grid;
-grid-template-columns: repeat(6, 1fr);
+grid-template-columns: repeat(3, 1fr);
 grid-template-rows: auto;
 justify-content: space-around;
 align-items: center;

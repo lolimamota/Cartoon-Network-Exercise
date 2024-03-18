@@ -13,10 +13,10 @@ import Steven from '../Main/Images/steven.png';
 import Ursos from '../Main/Images/ursos.png';
 import Billy from './Images/billy.png';
 import Dexter from './Images/dexter.png';
-import Dudu from './Images/du.png';
-import Jorel from './Images/jorel.png';
-import Monica from './Images/turma.png';
-import Vaca from './Images/vacaeofrango.png';
+import Dudu from './Images/dudu.png';
+import Jorel from './Images/jorelito.png';
+import Monica from './Images/monica.png';
+import Vaca from './Images/cow.png';
 import * as S from './HorarioStyle.jsx';
 import { Section } from "../Main/MainStyle.jsx";
 

@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
+//configurações da section com background
+
+
 export const SectionBlack = styled.section`
-height: 40vh;
+height: 35vh;
 display:flex;
 align-items: center;
-justify-content: space-around;
+justify-content: space-between;
 background-color: #211921;
 `;
 
@@ -17,10 +20,10 @@ background-color: #211921;
 `;
 
 export const Section = styled.section`
-height: 40vh;
+height: 35vh;
 display:flex;
 align-items: center;
-justify-content: space-around;
+justify-content: space-between;
 `;
 
 export const BlackH2 = styled.h2`
