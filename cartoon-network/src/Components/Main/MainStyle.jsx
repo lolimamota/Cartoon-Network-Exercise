@@ -1,32 +1,49 @@
 import styled from "styled-components";
 
-//configurações da section com background
+export const Scroller =styled.div`
+max-width: 80%;
+max-height: 35vh;
+outline: 3px solid red;
+margin: auto;
+overflow:hidden;
 
 
-export const SectionBlack = styled.section`
-height: 35vh;
+
+.scroller_inner{
+padding-block: 2rem;
 display:flex;
+gap: 1rem;
+
+    .scroller[data-animated="true"]{
+    overflow:hidden;
+
+    -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+};
+
+.scroller[data-animated="true"] .scroller_inner{
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s) var(--_animation-duration, forwards) linear infinite ;
+};
+
+.scroller[data-direction=right]{
+    --_animation-direction: reverse;
+};
+
+};
+
+
+@keyframes scroll{
+    to{
+        transform: translate(calc(-50% - 0.5rem));
+    }
+};
+`;
+
+export const Ul = styled.ul`
+list-style: none;
+display: flex;
+justify-content:center;
 align-items: center;
-justify-content: space-around;
-background-color: #211921;
-`;
-
-export const ImgBlack = styled.img`
-background-color: #211921;
-`;
-
-export const DivBlack = styled.div`
-background-color: #211921;
-`;
-
-export const Section = styled.section`
-height: 35vh;
-display:flex;
-align-items: center;
-justify-content: space-between;
-`;
-
-export const BlackH2 = styled.h2`
-background-color: #211921;
-color: white;
 `;
