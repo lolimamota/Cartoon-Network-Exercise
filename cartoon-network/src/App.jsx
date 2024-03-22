@@ -11,7 +11,6 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  background-color: #EDD820;
   font-family: "Madimi One", sans-serif;
 }
 `;

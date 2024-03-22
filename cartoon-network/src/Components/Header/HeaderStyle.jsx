@@ -9,6 +9,7 @@ font-family: "Madimi One", sans-serif;
 font-size: 0.6rem;
 font-weight: 100;
 padding: 5rem;
+background-color: #EDD820;
 `;
 
 export const Section = styled.section`
