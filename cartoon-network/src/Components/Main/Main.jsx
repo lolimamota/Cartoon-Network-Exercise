@@ -1,7 +1,8 @@
 //--------------------IMPORT DAS CONFIGS--------------------
 import React from 'react';
 import * as S from './MainStyle.jsx';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
+import Carousel from 'nuka-carousel';
 
 //--------------------IMPORT DE IMAGENS--------------------
 import Ben10 from './Images/ben10.png';
@@ -28,22 +29,24 @@ import Github from '../Footer/Images/logoGithub.png';
 export default function Main() {
   return (
     <main>
-        <S.SectionBlack>
-            <motion.img src={Sd} alt="Scooby-doo e sua turma" initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 0.5 }} />
-            <motion.img src={Ben10} alt="Ben 10" initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 0.5 }} />
-            <motion.img src={Looney} alt="O show dos Lonney Tunes" initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 0.5 }}/>
-            <motion.img src={Regular} alt="Apenas um show" initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 0.5 }}/>
-            <motion.img src={Courage} alt="Coragem: o cão covarde" initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 0.5 }}/>
-            <motion.img src={Adventure} alt="Hora de Aventura" initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 0.5 }}/>
-        </S.SectionBlack>
-        <S.Section>
-            <img src={Gumball} alt="O incrivel mundo de Gumball" />
-            <img src={Ppg} alt="As meninas superpoderosas" />
-            <img src={TomJerry} alt="O show de Tom e Jerry" />
-            <img src={TeenTitans} alt="Os jovens titãs em ação" />
-            <img src={Steven} alt="Steven universo" />
-            <img src={Ursos} alt="Ursos sem curso" />
-        </S.Section>
+      <S.SectionBlack>
+        <motion.img src={Sd} alt="Scooby-doo e sua turma" initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 0.5 }} />
+        <motion.img src={Ben10} alt="Ben 10" initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 0.5 }} />
+        <motion.img src={Looney} alt="O show dos Lonney Tunes" initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 0.5 }} />
+        <motion.img src={Regular} alt="Apenas um show" initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 0.5 }} />
+        <motion.img src={Courage} alt="Coragem: o cão covarde" initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 0.5 }} />
+        <motion.img src={Adventure} alt="Hora de Aventura" initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 0.5 }} />
+      </S.SectionBlack>
+      <S.Section>
+        <Carousel>
+          <img src={Gumball} alt="O incrivel mundo de Gumball" />
+          <img src={Ppg} alt="As meninas superpoderosas" />
+          <img src={TomJerry} alt="O show de Tom e Jerry" />
+          <img src={TeenTitans} alt="Os jovens titãs em ação" />
+          <img src={Steven} alt="Steven universo" />
+          <img src={Ursos} alt="Ursos sem curso" />
+        </Carousel>
+      </S.Section>
     </main>
   )
 }
