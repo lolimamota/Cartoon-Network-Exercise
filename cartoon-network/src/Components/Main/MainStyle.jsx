@@ -5,8 +5,11 @@ const bearing = keyframes`
   0% {
     transform: translateX(0);
   }
+  50%{
+    transform: translateX(-100%)
+  }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-200%);
   }
 `;
 
@@ -22,7 +25,7 @@ export const SectionBlack = styled.section`
 
 export const Img = styled.img`
 border: solid red;
-animation: ${bearing} 30s infinite linear;
+animation: ${bearing} 10s infinite linear;
 animation-fill-mode: forwards;
 width: 60%;
 `;
