@@ -8,22 +8,23 @@ const bearing = keyframes`
   100% {
     transform: translateX(-100%);
   }
-  0%{
-    transform: translateX(100%)
-  }
 `;
 
 export const SectionBlack = styled.section`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: #211921;
   width: 100%;
   height: 40vh;
+  overflow: hidden;
   `;
 
 export const Img = styled.img`
+border: solid red;
 animation: ${bearing} 30s infinite linear;
+animation-fill-mode: forwards;
+width: 60%;
 `;
 
 
@@ -34,22 +35,23 @@ const bearingReverse = keyframes`
   100% {
     transform: translateX(100%);
   }
-  0%{
-    transform: translateX(-100%)
-  }
 `;
 
 export const SectionYellow = styled.section`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: #EDD820;
   width: 100%;
   height: 40vh;
+  overflow: hidden;
   `;
 
 export const ImgReverse = styled.img`
+border: solid red;
 animation: ${bearingReverse} 30s infinite linear;
+animation-fill-mode: forwards;
+width: 60%;
 `;
 
 export const SectionSponsors = styled.section`
