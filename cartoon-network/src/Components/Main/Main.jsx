@@ -1,8 +1,6 @@
 //--------------------IMPORT DAS CONFIGS--------------------
 import React from 'react';
 import * as S from './MainStyle.jsx';
-import { motion } from 'framer-motion';
-import Carousel from 'nuka-carousel';
 
 //--------------------IMPORT DE IMAGENS--------------------
 import Ben10 from './Images/ben10.png';
@@ -30,23 +28,29 @@ export default function Main() {
   return (
     <main>
       <S.SectionBlack>
-        <motion.img src={Sd} alt="Scooby-doo e sua turma" initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 0.5 }} />
-        <motion.img src={Ben10} alt="Ben 10" initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 0.5 }} />
-        <motion.img src={Looney} alt="O show dos Lonney Tunes" initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 0.5 }} />
-        <motion.img src={Regular} alt="Apenas um show" initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 0.5 }} />
-        <motion.img src={Courage} alt="Coragem: o cão covarde" initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 0.5 }} />
-        <motion.img src={Adventure} alt="Hora de Aventura" initial={{ x: -1000 }} animate={{ x: 0 }} transition={{ duration: 0.5 }} />
+        <S.Img src={Sd} alt="Scooby-doo e sua turma" />
+        <S.Img src={Ben10} alt="Ben 10" />
+        <S.Img src={Looney} alt="O show dos Looney Tunes" />
+        <S.Img src={Courage} alt="Coragem: o cão corvarde" />
+        <S.Img src={Adventure} alt="Hora de Aventura" />
+        <S.Img src={Regular} alt="Apenas um show" />
       </S.SectionBlack>
-      <S.Section>
-        <Carousel>
-          <img src={Gumball} alt="O incrivel mundo de Gumball" />
-          <img src={Ppg} alt="As meninas superpoderosas" />
-          <img src={TomJerry} alt="O show de Tom e Jerry" />
-          <img src={TeenTitans} alt="Os jovens titãs em ação" />
-          <img src={Steven} alt="Steven universo" />
-          <img src={Ursos} alt="Ursos sem curso" />
-        </Carousel>
-      </S.Section>
+      <S.SectionYellow>
+        <S.ImgReverse src={Gumball} alt="O incrível mundo de Gumball" />
+        <S.ImgReverse src={Ppg} alt="As meninas superpoderosas" />
+        <S.ImgReverse src={TomJerry} alt="Tom e Jerry" />
+        <S.ImgReverse src={TeenTitans} alt="Jovens Titãs em ação" />
+        <S.ImgReverse src={Steven} alt="Steven Universo" />
+        <S.ImgReverse src={Ursos} alt="Ursos sem curso" />
+      </S.SectionYellow>
+      <S.SectionSponsors>
+        <img src={Warner} alt="Logo da Warner Bros Corporation" />
+        <h2>Sobre nós</h2>
+        <h2>Produtos</h2>
+        <h2>Personagens</h2>
+        <img src={Linkedin} alt="Logo do LinkedIn" />
+        <img src={Github} alt="Logo do Github" />
+      </S.SectionSponsors>
     </main>
   )
 }
