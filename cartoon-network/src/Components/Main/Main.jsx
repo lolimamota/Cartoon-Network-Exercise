@@ -48,8 +48,10 @@ export default function Main() {
         <h2>Sobre nós</h2>
         <h2>Produtos</h2>
         <h2>Personagens</h2>
+        <div>
         <img src={Linkedin} alt="Logo do LinkedIn" />
         <img src={Github} alt="Logo do Github" />
+        </div>
       </S.SectionSponsors>
     </main>
   )
